@@ -1,0 +1,14 @@
+header {
+	height: 700px;
+	width: 1000px;
+	margin: auto;
+	border: 1px solid black;
+	background-image: image-url("header.jpg");
+	background-position: center;
+}
+
+header ul li  {
+	display: inline;
+	text-decoration: none;
+	margin-right: 10px;
+}
