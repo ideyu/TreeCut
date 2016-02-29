@@ -1,5 +1,19 @@
-.container {
-	background-color: #fcf8e3;
+.container-fluid {
+	background-color: white;
+	background-image: image-url("winter_2011_stihl.jpg");
+}
+
+
+//----------------------Master header-------------------------------------------------------
+
+.master_row {
+	background-color: white;
+	height: 40px;
+}
+
+.master_row .container{
+	text-align: center;
+	margin-top: 9px;
 }
 
 //---------------------------------Header---------------------------------------------------
@@ -52,9 +66,45 @@ footer {
 	height: 30px;
 	background-color: #e7e7e7;
 	border-bottom: 7px solid black;
+	font-family: 'Playfair Display', serif;
+	color: black;
 }
 
 footer p {
 	text-align: center;
 	font-weight: 600;
+}
+
+//----------------------------------Left Navigation-----------------------------------------------
+
+#left_navigation {
+	margin: 10px;
+	height: auto;
+	min-height: 300px;
+	background-color: rgba(99, 99, 99 , 0.8);
+}
+
+//-------------------------------Main Content------------------------------------------------------
+
+#main_content {
+	margin: 10px;
+	height: auto;
+	min-height: 300px;
+	background-color: rgba(99, 99, 99 , 0.8);
+}
+
+//------------------------------Teaser--------------------------------------------------------------
+
+#teaser {
+}
+
+#teaser > div {
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+.teaser-door {
+	height: 200px;
+	padding: 10px;
+	background-color: rgba(99, 99, 99 , 0.8);
 }
