@@ -2,6 +2,7 @@
 	background-color: white;
 	background-image: image-url("winter_2011_stihl.jpg");
 	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -25,9 +26,10 @@
 //---------------------------------Header---------------------------------------------------
 header {
 	height: 50px;
-	font-family: 'Playfair Display', serif;
+	//font-family: 'Open Sans', sans-serif;
 	border-top: 7px solid #f37a1f;
-	background-color: rgba(35, 44, 51, .8);
+	//background-color: rgba(35, 44, 51, .8);
+    background-image: linear-gradient(to top, rgba(35, 44, 51, .8) 15px, rgba(255, 255, 255, .8) 100%);
 }
 
 header ul {
@@ -45,12 +47,16 @@ header ul li a {
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 10px;
-	padding-bottom: 12px;
+	padding-bottom: 15px;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: rgba(35, 44, 51, .6);
 }
 
 header ul li a:link, a:visited{
@@ -72,7 +78,7 @@ footer {
 	height: 30px;
 	background-color: rgba(35, 44, 51, .8);
 	border-bottom: 7px solid #f37a1f;
-	font-family: 'Playfair Display', serif;
+	//font-family: 'Playfair Display', serif;
 	color: #777777;
 }
 
@@ -85,13 +91,14 @@ footer p {
 
 #left_navigation {
 	margin: 10px;
-	height: auto;
-	min-height: 500px;
+	height: 100%;
+	min-height: 177px;
 	background-color: rgba(35, 44, 51, .8);
 }
 
 #left_navigation ul {
 	padding-left: 20px;
+    padding-top: 19px;
 }
 
 #left_navigation ul li{
@@ -124,12 +131,26 @@ footer p {
 
 //-------------------------------Main Content------------------------------------------------------
 
-#main_content {
+.main_content {
 	margin: 10px;
+	padding: 10px;
 	height: auto;
 	min-height: 500px;
-	background-color: rgba(99, 99, 99 , 0.8);
+	background-color: rgba(255, 255, 255 , 0.5);
 }
+
+.main_content h2{
+	color: #f37a1f;
+	font-weight: bold;
+}
+
+.main_content img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+//------------------------------
 
 //------------------------------Teaser--------------------------------------------------------------
 
@@ -144,6 +165,12 @@ footer p {
 .teaser-door {
 	height: 200px;
 	padding: 10px;
-	background-color: rgba(99, 99, 99 , 0.8);
+	background-color: rgba(255, 255, 255 , 0.5);
 	overflow: hidden;
+	margin: 10px;
+}
+
+.teaser-door img {
+	max-width: 100%;
+	height: auto;
 }
